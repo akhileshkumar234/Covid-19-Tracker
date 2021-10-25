@@ -1,0 +1,133 @@
+/*  Basic Styling */
+.mainbody {
+    background-color: white;
+    display: flex;
+    color:#ebf5fc;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+.colortop{
+    color:rgb(10, 10, 10);
+}
+
+.mainbody1{
+    
+    margin-top: 20px;
+    background-color: white;
+    color:#ebf5fc;
+    justify-content: center;
+    text-align: center;
+}
+*
+{
+    margin:0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+span{
+    color: aqua;
+    animation: blink 2s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    25%{opacity: .25;}
+    50%{opacity: .5;}
+    75%{opacity: .75;}
+    100%{opacity: 1;}
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200vh;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container .card{
+    position: relative;
+    min-width: 320px;
+    height: 160px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.493),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.432),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+.container .card .box{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.801);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container .card .box
+{
+    transform: translateY(-40px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.822);
+    background: linear-gradient(45deg,#b95ce4,#4f29cd);
+}
+.container .card .box .content
+{
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    color: black;
+}
+/* .container .card .box .content h2
+{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0,0,0,0.02);
+    transition: 0.5s;
+} */
+/* .container .card:hover .box .content h2
+{
+    color: rgba(245, 241, 245, 0.918);
+} */
+.container .card:hover .box .content h3{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card .box .content p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card .box:hover .content h3,
+.container .card .box:hover .content p
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #440653;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.705);
+}
+.container .card:hover .box .content a{
+    background: #ff568f;
+}
