@@ -8,8 +8,20 @@
     min-height: 100vh;
 
 }
+.rightside{
+    float: right;
+    color: darkblue;
+    border:2px solid purple;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
 .colortop{
-    color:rgb(10, 10, 10);
+    color:rgb(175, 6, 6);
 }
 
 .mainbody1{
