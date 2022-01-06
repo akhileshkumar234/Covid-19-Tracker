@@ -3,16 +3,16 @@ import './covid.css';
 const Covid19 = () => {
     const [data, setData] = useState([]);
     const getCovid19Data = async () => {
-       
-            try {
-                const respon = await fetch('https://data.covid19india.org/data.json');
-                const datag = await respon.json();
-                console.log(datag.statewise[0]);
-                setData(datag.statewise[0]);
-            } catch (e) {
-                console.log(e);
-            }
-     
+
+        try {
+            const respon = await fetch('https://data.covid19india.org/data.json');
+            const datag = await respon.json();
+            console.log(datag.statewise[0]);
+            setData(datag.statewise[0]);
+        } catch (e) {
+            console.log(e);
+        }
+
     }
     useEffect(() => {
         setInterval(() => {
@@ -21,12 +21,12 @@ const Covid19 = () => {
     }, [])
     return (
         <section>
-           
+
             <div className="mainbody1">
-                
-                    <h1 className="blink "><span className="colortop">🔴 LIVE</span></h1>
-                    <h2>COVID-19 TRACKER</h2>
-               
+
+                <h1 className="blink "><span className="colortop">🔴 LIVE</span></h1>
+                <h2>COVID-19 TRACKER</h2>
+
             </div>
             <div className="mainbody">
 
@@ -93,9 +93,11 @@ const Covid19 = () => {
                     </div>
                 </div>
             </div>
-            <div className='rightside'>
-                <h3 className='hostname'>By - Akhilesh Kumar</h3>
-            </div>
+            
+                <div className='rightside'>
+                    <h3>By - Akhilesh Kumar</h3>
+                </div>
+        
         </section>
 
     )
